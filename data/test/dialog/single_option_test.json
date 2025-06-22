@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:multi_action",
+  "title": { "text": "single_option test" },
+  "columns": 3,
+  "inputs": [
+    {
+      "type": "single_option",
+      "key": "selection_key",
+      "label": "Status Selection",
+      "options": [
+        {
+          "id": "option1",
+          "display": "Activate"
+        },
+        {
+          "id": "option2",
+          "display": "Deativate"
+        }
+      ]
+    }
+  ],
+    "actions": [
+    {
+      "label": "Confirm_selection",
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "tellraw @a {\"text\":\"Your Selection is $(selection_key)\"}"
+      }
+    }
+  ]
+}

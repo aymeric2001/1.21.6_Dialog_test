@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:multi_action",
+  "title": { "text": "Mechanics Selection" },
+  "columns": 4,
+  "actions": [
+    {
+    "id": "1",
+    "label": { "text": "Activate", "color": "green" },
+    "width": 60,
+    "action" : {
+      "type": "run_command",
+      "command": "execute as @a at @s run function test:activated"
+      }
+    },
+    { "id": "1", "label": { "text": "Deativate", "color": "red" }, "width": 60 },
+    { "id": "1", "label": { "text": "Default", "color": "gray" }, "width": 60 },
+    { "id": "1", "label": "NAME", "tooltip": "mechanic description", "width": 200 } 
+  ]
+}
